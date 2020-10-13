@@ -1,8 +1,6 @@
 language: java
 
-jdk: oraclejdk9
-
-before_deploy: gradle makeArchives
+before_deploy: ./gradlew makeArchives
 
 deploy:
   provider: releases
