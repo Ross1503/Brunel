@@ -1,6 +1,6 @@
 language: java
 
-jdk: oraclejdk
+jdk: oraclejdk8
 
 before_deploy: gradle makeArchives
 
