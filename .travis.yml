@@ -2,10 +2,6 @@ language: java
 
 before_deploy: gradle makeArchives
 
-arch:
-  - amd64
-  - arm64
-
 deploy:
   provider: releases
   api_key: KBpdsl2-BiX2uNJe6d1OnA
