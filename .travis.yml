@@ -2,7 +2,7 @@ language: java
 
 jdk: openjdk8
 
-before_deploy: ./gradlew makeArchives
+before_deploy: gradle makeArchives
 
 deploy:
   provider: releases
