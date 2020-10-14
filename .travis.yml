@@ -9,8 +9,12 @@ arch:
 before_deploy: gradle makeArchives
 
 install:
-  - sudo apt-get install openjdk-8-jdk
-  - sdk install gradle 6.6.1
+  - sudo apt-get -y install openjdk-8-jdk wget unzip
+  - wget https://services.gradle.org/distributions/gradle-5.1.1-bin.zip
+  - sudo mkdir /opt/gradle
+  - sudo unzip -d /opt/gradle-5.1.1-bin.zip
+  - export PATH=$PATH:/opt/gradle/gradle-5.1.1/bin
+  
 deploy:
   provider: releases
   api_key: KBpdsl2-BiX2uNJe6d1OnA
