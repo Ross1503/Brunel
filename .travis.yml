@@ -9,7 +9,7 @@ arch:
 before_deploy: gradle makeArchives
 
 install:
-  - sudo apt-get -y install openjdk-8-jdk wget unzip
+  - sudo apt-get -y install openjdk-8-jdk wget zip unzip
   - curl -s "https://get.sdkman.io" | bash
   - source "$HOME/.sdkman/bin/sdkman-init.sh"
   - sdk install gradle
