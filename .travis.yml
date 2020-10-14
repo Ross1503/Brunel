@@ -2,6 +2,10 @@ language: java
 
 jdk: openjdk8
 
+arch:
+  - amd64
+  - arm64
+
 before_deploy: gradle makeArchives
 
 install:
