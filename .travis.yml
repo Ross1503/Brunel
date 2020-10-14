@@ -4,6 +4,9 @@ jdk: openjdk8
 
 before_deploy: gradle makeArchives
 
+install:
+  - sudo apt-get install openjdk-8-jdk
+
 deploy:
   provider: releases
   api_key: KBpdsl2-BiX2uNJe6d1OnA
